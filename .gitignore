@@ -1,0 +1,6 @@
+/target
+/world-sdk/trees/**
+/dist
+/.trunk
+/*.symbols.json
+/*.mangled.json

@@ -1,0 +1,16 @@
+[package]
+name = "vrc-udon-methods-extractor"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+zip.workspace = true
+vrc-udon-methods-core = { path = "../core" }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+dotscope.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true

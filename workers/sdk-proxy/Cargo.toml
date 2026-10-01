@@ -1,0 +1,19 @@
+[package]
+name = "vrc-udon-methods-sdk-proxy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+base64.workspace = true
+js-sys.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+vrc-udon-methods-worker-core = { path = "../core" }
+wasm-bindgen.workspace = true
+wasm-bindgen-futures.workspace = true
+worker.workspace = true
