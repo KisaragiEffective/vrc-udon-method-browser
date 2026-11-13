@@ -31,5 +31,5 @@ console_error_panic_hook = "0.1.7"
 js-sys = "0.3.77"
 wasm-bindgen-futures = "0.4.50"
 gloo-net = "0.6.0"
-zip = { version = "2.4.2", default-features = false, features = ["deflate"] }
+zip = { version = "9.0.0", default-features = false, features = ["deflate"] }
 worker = "0.8.5"
