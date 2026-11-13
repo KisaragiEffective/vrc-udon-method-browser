@@ -10,10 +10,13 @@ pub fn extract_required_dlls_from_zip(zip_bytes: &[u8]) -> Result<Vec<Vec<u8>>> 
 
     for index in 0..archive.len() {
         let mut file = archive.by_index(index)?;
-        if !REQUIRED_DLLS
-            .iter()
-            .any(|required| file.name().ends_with(required))
-        {
+        let is_required = {
+            let file_name = file.name()?;
+            REQUIRED_DLLS
+                .iter()
+                .any(|required| file_name.ends_with(required))
+        };
+        if !is_required {
             continue;
         }
 
