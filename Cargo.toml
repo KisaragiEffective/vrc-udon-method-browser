@@ -30,6 +30,6 @@ leptos = { version = "0.8.5", features = ["csr"] }
 console_error_panic_hook = "0.1.7"
 js-sys = "0.3.77"
 wasm-bindgen-futures = "0.4.50"
-gloo-net = "0.6.0"
+gloo-net = "0.8.0"
 zip = { version = "9.0.5", default-features = false, features = ["deflate"] }
 worker = "0.8.5"
