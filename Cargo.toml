@@ -32,4 +32,4 @@ js-sys = "0.3.77"
 wasm-bindgen-futures = "0.4.50"
 gloo-net = "0.6.0"
 zip = { version = "9.0.5", default-features = false, features = ["deflate"] }
-worker = "0.8.5"
+worker = "0.9.0"
